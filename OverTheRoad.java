@@ -30,4 +30,4 @@ If you are timing out, running out of memory, or get any kind of "error", read o
 
 To solve this, you need to think of a way to do the kata without making massive lists or huge for loops. Read the discourse for some inspiration :)
 
-FUNDAMENTAL SMATHEMATICS PERFORMANCE
+FUNDAMENTALS MATHEMATICS PERFORMANCE
