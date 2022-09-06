@@ -1,11 +1,11 @@
 import java.util.Arrays;
 
-class Minimum {
+class FormTheMinimum {
 
-    static int minValue(int[] values) {
+    public static int minValue(int[] values) {
         return Arrays.stream(values)
                 .distinct()
                 .sorted()
-                .reduce(0, (a, b) -> a * 10 + b);
+                .reduce(0, (x, y) -> x * 10 + y);
     }
 }
