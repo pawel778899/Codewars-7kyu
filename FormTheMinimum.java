@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-class FormTheMinimum {
+class Minimum {
 
     public static int minValue(int[] values) {
         return Arrays.stream(values)
