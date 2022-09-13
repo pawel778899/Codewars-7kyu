@@ -1,3 +1,21 @@
+//Solution 1
+
+import java.util.*;
+import java.util.stream.*;
+
+public class GpsSpeed {
+    
+    public static int gps(int s, double[] x) {
+        double maxSpeed = IntStream
+          .range(0, x.length - 1)
+          .mapToDouble(i -> (x[i+1] - x[i]) * 3600.0 / (double) s )
+          .max().orElse(0.0);
+        return (int) Math.floor(maxSpeed);
+    }
+}
+
+//Solution 2
+
 import static java.util.stream.IntStream.range;
 
 public class GpsSpeed {
