@@ -41,4 +41,4 @@ public class FunctionalProgramming {
 // }
 // Write a Function (with the appropriate types) that returns true if a given student is "John Smith" with a student number of "js123" (otherwise return false).
 
-// FUNCTIONAL PROGRAMMINGFUNDAMENTALS
+// FUNCTIONAL PROGRAMMING FUNDAMENTALS
