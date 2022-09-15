@@ -36,8 +36,8 @@ public class SillyAdditon {
 
 
 //DESCRIPTION:
-https://www.codewars.com/kata/5effa412233ac3002a9e471d
+// https://www.codewars.com/kata/5effa412233ac3002a9e471d
  
-You may assume both integers are positive integers and the result will not be bigger than Integer.MAX_VALUE
+// You may assume both integers are positive integers and the result will not be bigger than Integer.MAX_VALUE
 
-ALGORITHMS MATHEMATICS
+// ALGORITHMS MATHEMATICS
