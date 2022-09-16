@@ -35,6 +35,17 @@ public class Solution{
 }
 
 
+//Solution 3
+
+import java.util.Arrays;
+
+public class Solution{
+    public static int largestPairSum(int[] numbers){
+      return Arrays.stream(numbers).map(x->-x).sorted().map(x->-x).limit(2).sum();
+    }
+}
+
+
 
 
 // DESCRIPTION:
