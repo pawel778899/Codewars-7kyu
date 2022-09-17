@@ -12,6 +12,53 @@ public class GiftSorter{
     }
 }
 
+//Solution 2
+
+import java.util.Arrays;
+import java.util.Comparator;
+
+public class GiftSorter{
+    public String sortGiftCode(String code){
+
+        Character tempArray[] = new Character[code.length()];
+
+        for (int i = 0; i < code.length(); i++) {
+            tempArray[i] = code.charAt(i);
+        }
+
+        Arrays.sort(tempArray, new Comparator<Character>() {
+
+            // Method 2
+            // To compare characters
+            @Override
+            public int compare(Character c1, Character c2)
+            {
+                // Ignoring case
+                return Character.compare(
+                        Character.toLowerCase(c1),
+                        Character.toLowerCase(c2));
+            }
+        });
+        StringBuilder sb = new StringBuilder(tempArray.length);
+
+        for (Character c : tempArray)
+            sb.append(c.charValue());
+
+        return sb.toString();
+    }
+}
+
+//Solution 3
+
+import java.util.Arrays;
+import java.util.stream.Collectors;
+
+public class GiftSorter {
+    public String sortGiftCode(String code) {
+        return Arrays.stream(code.split("")).sorted().collect(Collectors.joining(""));
+    }
+}
+
 
 // DESCRIPTION:
 // Happy Holidays fellow Code Warriors!
